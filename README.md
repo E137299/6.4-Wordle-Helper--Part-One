@@ -1,9 +1,9 @@
-# 6.4-Wordle-Helper--Part-One
+# 6.4 Wordle Helper-Part-One
 
 ## Objective:
 In this assignment, you'll develop a program to assist with Wordle puzzles. The program will take a user's guessed word and the scoring results to help narrow down potential solutions from a word bank.
 
-## PART ONE: Simple Wordle Helper 
+## Simple Wordle Helper 
 ### Instructions
 1. **Import Word Bank:**
     - The New York Times' word bank is provided to you. 
