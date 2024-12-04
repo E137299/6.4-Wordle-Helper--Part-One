@@ -39,10 +39,10 @@ In this assignment, you'll develop a program to assist with Wordle puzzles. The 
 6. **Testing the Program:**
     - Test your program by running it multiple times with different guesses and scores. After each round, print out the filtered list of potential words from the word_bank.
 
-7. **Looping for Multiple Rounds**:
-    - Modify your program to loop, allowing the user to guess and score multiple times. After each round, update the word_bank with the filtered list of words.
+7. **Looping for Six Rounds**:
+    - Modify your program to loop for six rounds, allowing the user to guess and score multiple times. After each round, update the wordbank with the filtered list of words.
 
 8. **Displaying Remaining Words:**
-    - After each guess, display the remaining possible words in the word_bank. If only one word remains, inform the user that the word has been found.
+    - After each guess, display the remaining possible words in the wordbank. If only one word remains, inform the user that the word has been found.
 9. **Ending the Program:**
     - The program should end either when the user finds the correct word (when only one word remains) or when the user decides to quit.
