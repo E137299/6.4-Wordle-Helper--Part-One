@@ -18,15 +18,30 @@ In this assignment, you'll develop a program to assist with Wordle puzzles. The 
         - *contains_letter(wordbank, letter)*:
 
             This function should return a list of words from the wordbank that contain the specified letter anywhere in the word.
-        - *does_not_contain_letter(wordbank, letter)*:
-
-            This function should return a list of words from the wordbank that do not contain the specified letter at all.
+        
         - *letter_at_position(wordbank, letter, index)*:
 
             This function should return a list of words from the wordbank where the specified letter is at the exact index.
         - *letter_not_at_position(wordbank, letter, index)*:
 
             This function should return a list of words from the word_bank where the specified letter is not at the given index.
+        - *does_not_contain_letter(wordbank, letter, guess, score)*:
+            
+            Returns words that do not contain letter, only when allowed by Wordle rules.
+
+            Rules for this function:
+
+            - If the letter appears anywhere in the guess with a "G" or "Y" score, the letter exists in the word.
+
+                - In this case, an "X" or "Y" means “not in this position” → do not remove the letter entirely
+
+            - If all occurrences of the letter in the guess are scored "X":
+
+                - The letter does not appear in the word
+
+                - Remove all words containing the letter
+
+            - If removal is not allowed, return the word bank unchanged
     - These helper functions will be essential for filtering the wordbank based on the user’s input.
 
 5. **Filtering the Word Bank:**
